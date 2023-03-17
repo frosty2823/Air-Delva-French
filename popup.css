@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "FancyFont";
+  src: url("/resources/fonts/Satisfy-Regular.ttf") format("truetype");
+}
+body {
+  width: 176px;
+}
+.wrapper {
+  align-items: center;
+}
+hr {
+  margin-bottom: 7px;
+  margin-top: 2px;
+}
+.airDelva {
+  width: 175px;
+  height: 25px;
+  margin: 2px;
+  margin-bottom: 7px;
+  color: rgb(13, 55, 63);
+  border-radius: 20px;
+  border-color: rgb(16, 98, 112);
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.airDelva span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.airDelva span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.airDelva:hover span {
+  padding-right: 25px;
+}
+
+.airDelva:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#personalNote {
+  width: 172px;
+}
+
+#labelNote {
+  font-size: 14px;
+  color: rgb(13, 55, 63);
+}
+
+#clipped {
+  font-size: 16px;
+  color: rgb(13, 55, 63);
+}
+
+.language {
+  padding: 1px;
+  margin-bottom: 7px;
+  color: rgb(189, 40, 29);
+  font-size: 24px;
+  text-align: center;
+  font-style: bold;
+  display: block;
+  font-family: "FancyFont", sans-serif;
+}

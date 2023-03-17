@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Air Delva French",
+  "version": "0.1.1",
+  "version_name": "Official",
+  "description": "Fetches different variables from currently opened Gmail Conversation and paste it automatically in AirTable and Google Sheets",
+
+  "author": "M. Adnan Khan",
+
+  "action": {
+    "default_title": "Air Delva French",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["scripting", "activeTab", "tabs", "clipboardRead"],
+  "icons": {
+    "16": "/resources/image16.png",
+    "32": "/resources/image32.png",
+    "48": "/resources/image48.png",
+    "128": "/resources/image128.png"
+  },
+  "host_permissions": ["https://*/*"]
+}
