@@ -245,11 +245,11 @@ const copyToClickBoard = function (buttonText, personalNote) {
     .querySelector(".g3")
     .getAttribute("title")
     .split(" ");
-  let day = dateFrom[dateFrom.length - 4];
-  let month = dateFrom[dateFrom.length - 3];
-  let year = dateFrom[dateFrom.length - 2];
+  let day = dateFrom[0];
+  let month = dateFrom[1];
+  let year = dateFrom[2];
   let y2 = new Date();
-  y3 = y2.getFullYear() > year ? year : y2.getFullYear();
+  let y3 = y2.getFullYear() > year ? year : y2.getFullYear();
   if (month == "janv.") month = 1;
   else if (month.includes("f")) month = 2;
   else if (month == "mars") month = 3;
